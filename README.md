@@ -45,6 +45,11 @@ module tb_collision_detection();
     wire warning;
     wire brake;
 
+    module tb_collision_detection();
+    reg [7:0] distance_front;
+    reg [7:0] distance_rear;
+    wire warning;
+    wire brake;
     // Instantiate the collision detection module
     collision_detection uut (
         .distance_front(distance_front),
