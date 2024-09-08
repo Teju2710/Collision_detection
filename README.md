@@ -35,25 +35,16 @@ module collision_detection(
 endmodule
 
 ## Testbench Code
-
-    
-
+`timescale 1ns / 1ps
 
 
 
-
-
-
-
-
-
-
-'timescale 1ns / 1ps
 module tb_collision_detection();
     reg [7:0] distance_front;
     reg [7:0] distance_rear;
     wire warning;
     wire brake;
+
     // Instantiate the collision detection module
     collision_detection uut (
         .distance_front(distance_front),
@@ -61,6 +52,7 @@ module tb_collision_detection();
         .warning(warning),
         .brake(brake)
     );
+
     initial begin
         // Display output for each step
         $monitor("Time = %0d, Front = %0d, Rear = %0d, Warning = %b, Brake = %b",
