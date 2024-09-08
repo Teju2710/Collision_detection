@@ -86,7 +86,7 @@ endmodule
         // End simulation
         $finish;
     end
-endmodule
+    endmodule
 
 ## Result
 The virtual simulation of the Car Collision Detection System was successfully conducted using Vivado, demonstrating the effectiveness of the Verilog-based design in detecting potential vehicle collisions. Through various test scenarios, including sudden braking, speed variations, and changes in vehicle proximity, the system accurately predicted potential collisions and generated timely alerts. The testbenches verified the system’s functionality under different conditions, ensuring reliable performance across a range of driving environments. Additionally, the simulation showed that the design utilized minimal hardware resources, making it efficient and scalable for real-time applications in automotive systems. Overall, the virtual simulation validated the correctness and resource efficiency of the collision detection logic, paving the way for potential integration into real-world safety systems.
