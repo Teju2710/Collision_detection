@@ -35,15 +35,10 @@ module collision_detection(
 endmodule
 
 ## Testbench Code
-`timescale 1ns / 1ps
-module tb_collision_detection();
-    reg [7:0] distance_front;
-    reg [7:0] distance_rear;
-    wire warning;
-    wire brake;
+
     
-    'timescale 1ns / 1ps
-    module tb_collision_detection();
+'timescale 1ns / 1ps
+module tb_collision_detection();
     reg [7:0] distance_front;
     reg [7:0] distance_rear;
     wire warning;
