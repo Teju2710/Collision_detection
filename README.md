@@ -6,15 +6,20 @@ The design is implemented virtually using Vivado, where the hardware description
 
 This project has potential applications in autonomous vehicles and advanced driver-assistance systems (ADAS), where real-time collision detection is crucial for improving road safety. The repository contains the complete Verilog codebase, testbenches, and simulation results, providing a comprehensive overview of the system's design and performance. Through this virtual implementation, the project demonstrates how hardware logic can be utilized in the development of safety-critical automotive systems.
 ## Code
-//`timescale 1ns / 1ps
+`timescale 1ns / 1ps
 
 module collision_detection(
-    input [7:0] distance_front,   // Input distance from the front sensor (in meters)
-    input [7:0] distance_rear,    // Input distance from the rear sensor (in meters)
-    output reg warning,           // Output warning signal
-    output reg brake              // Output brake signal
+    input [7:0] distance_front,   
+    // Input distance from the front sensor (in meters)
+    input [7:0] distance_rear,    
+    // Input distance from the rear sensor (in meters)
+    output reg warning,           
+    // Output warning signal
+    output reg brake              
+    // Output brake signal
 );
-    parameter SAFE_DISTANCE = 10;  // Safe distance threshold (in meters)
+    parameter SAFE_DISTANCE = 10;  
+    // Safe distance threshold (in meters)
     always @(*) begin
     
         // Initialize outputs to zero
@@ -35,7 +40,7 @@ module collision_detection(
 endmodule
 
 ## Testbench Code
- `timescale 1ns / 1ps
+`timescale 1ns / 1ps
 module tb_collision_detection();
     reg [7:0] distance_front;
     reg [7:0] distance_rear;
